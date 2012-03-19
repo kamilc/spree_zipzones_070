@@ -23,7 +23,7 @@ def include?(address)
     when "Zone"
       zone_member.zoneable.include?(address)
     when "Country"
-      zone_member.zoneable_id == address.country
+      zone_member.zoneable_id == address.country_id
     when "State"
       zone_member.zoneable_id == address.state
     when "Zipcode"
